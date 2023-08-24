@@ -11,6 +11,7 @@ namespace vs // Note: actual namespace depends on the project name.
         {
             Console.WriteLine("du har klamidia");
             Console.ForegroundColor = ConsoleColor.Yellow;
+            
         }
     }
 }
