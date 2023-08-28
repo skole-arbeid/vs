@@ -14,14 +14,13 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.Title = "arne";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             
-            Console.WindowHeight = 40;
             
             //convo ish
             Console.WriteLine("Hello, I am Arne.");
             Console.WriteLine("whats yours?");
             
             string userName = Console.ReadLine();
-            Console.WriteLine("hello" + userName + ", nice to meet you! \n what do you do?")
+            Console.WriteLine("hello" + userName + ", nice to meet you! \n what do you do?");
             
             Console.ReadLine();
 
