@@ -21,11 +21,14 @@ namespace vs // Note: actual namespace depends on the project name.
 
             Console.ReadLine();
 
-            Console.WriteLine("Hi, (InsertNameHere).\n What do you do?");
+            Console.WriteLine("Hi, (InsertNameHere).\nWhat do you do?");
             
             Console.ReadLine();
 
-            Console.WriteLine("Cool! \n Whats your favourite color?");
+            Console.WriteLine("Cool! \nWhats your favourite color?");
+
+            Console.ReadLine();
+            Console.WriteLine("Nice, \nNow i've extracted information now i will self destruct.");
             
             if (Console.ReadKey().Key == ConsoleKey.K);
             {
