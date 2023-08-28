@@ -40,11 +40,10 @@ namespace vs // Note: actual namespace depends on the project name.
             
             Console.ReadLine();
 
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Red;
 
             Console.WriteLine("Nice, \nNow i've extracted information now i will self destruct.");
             
-            Console.ForegroundColor = ConsoleColor.Red;
 
             //ending in a blip for 2 secs
             if (Console.ReadKey().Key == ConsoleKey.K);
