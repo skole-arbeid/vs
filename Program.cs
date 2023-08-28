@@ -19,16 +19,29 @@ namespace vs // Note: actual namespace depends on the project name.
             //convo ish
             Console.WriteLine("Hello, I am Arne.");
             Console.WriteLine("whats yours?");
-
-            Console.ReadLine();
-
-            Console.WriteLine("Hi, (InsertNameHere).\nWhat do you do?");
+            
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             
             Console.ReadLine();
 
-            Console.WriteLine("Cool! \nWhats your favourite color?");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+
+            Console.WriteLine("Hi, (InsertNameHere).\nWhat do you do?");
+            
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
 
             Console.ReadLine();
+
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+
+            Console.WriteLine("Cool! \nWhats your favourite color?");
+
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            
+            Console.ReadLine();
+
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+
             Console.WriteLine("Nice, \nNow i've extracted information now i will self destruct.");
             
             //ending in a blip for 2 secs
@@ -39,3 +52,5 @@ namespace vs // Note: actual namespace depends on the project name.
         }
     }
 }
+
+
