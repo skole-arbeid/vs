@@ -20,7 +20,7 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.WriteLine("whats yours?");
             
             string userName = Console.ReadLine();
-            Console.WriteLine("hello"  + userName + ", nice to meet you! \n what do you do?");
+            Console.WriteLine("Hello" + userName + ", nice to meet you! \nWhat do you do?");
             
             Console.ReadLine();
 
@@ -28,7 +28,9 @@ namespace vs // Note: actual namespace depends on the project name.
             
             Console.ReadLine();
 
-            Console.WriteLine("Nice, \nNow i've extracted information now i will self destruct.");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+
+            Console.WriteLine("OK, \nNow i've extracted information now i will self destruct.");
 
             //ending in a blip for 2 secs
             if (Console.ReadKey().Key == ConsoleKey.K);
