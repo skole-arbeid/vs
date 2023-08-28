@@ -16,11 +16,10 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.WindowHeight = 40;
             
             
-            Console.WriteLine("You are an idiot HAHAHA! You are an idiot HAHAHA! You are an idiot HAHAHA! You are an idiot HAHAHA!...                  do you admit that you are an idiot?                                                                                     Y/N");
-            if (Console.ReadKey().Key == ConsoleKey.Y)
-            {
-             Console.Beep(523, 500);
-            }
+            Console.WriteLine("Hello, I am Arne.");
+            Console.WriteLine("whats yours?");
+
+            Console.ReadLine();
             
         }
     }
