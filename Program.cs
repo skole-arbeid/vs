@@ -9,7 +9,7 @@ namespace vs // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("You are an idiot HAHAHA! You are an idiot HAHAHA! You are an idiot HAHAHA! You are an idiot HAHAHA!...                  do you admit that you are an idiot?                                                                                     Y/N");
             if (Console.ReadKey().Key == ConsoleKey.Y)
             {
