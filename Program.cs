@@ -20,7 +20,7 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.WriteLine("whats yours?");
             
             string userName = Console.ReadLine();
-            Console.WriteLine("hello" + userName + ", nice to meet you! \n what do you do?");
+            Console.WriteLine("hello"  + userName + ", nice to meet you! \n what do you do?");
             
             Console.ReadLine();
 
