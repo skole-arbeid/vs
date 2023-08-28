@@ -21,11 +21,11 @@ namespace vs // Note: actual namespace depends on the project name.
 
             Console.ReadLine();
 
-            Console.WriteLine("Hi, /n(InsertName) what do you do?");
+            Console.WriteLine("Hi, (InsertNameHere).\n What do you do?");
             
             Console.ReadLine();
 
-            Console.WriteLine("Cool! /n Whats your favourite color?");
+            Console.WriteLine("Cool! \n Whats your favourite color?");
             
         }
     }
