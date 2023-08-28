@@ -12,7 +12,7 @@ namespace vs // Note: actual namespace depends on the project name.
         {
             // change appearance
             Console.Title = "arne";
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             
             Console.WindowHeight = 40;
             
@@ -20,30 +20,16 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.WriteLine("Hello, I am Arne.");
             Console.WriteLine("whats yours?");
             
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            string userName = Console.ReadLine();
+            Console.WriteLine("hello" + userName + ", nice to meet you! \n what do you do?")
             
             Console.ReadLine();
-
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-
-            Console.WriteLine("Hi, (InsertNameHere).\nWhat do you do?");
-            
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
-
-            Console.ReadLine();
-
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
 
             Console.WriteLine("Cool! \nWhats your favourite color?");
-
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
             
             Console.ReadLine();
 
-            Console.ForegroundColor = ConsoleColor.Red;
-
             Console.WriteLine("Nice, \nNow i've extracted information now i will self destruct.");
-            
 
             //ending in a blip for 2 secs
             if (Console.ReadKey().Key == ConsoleKey.K);
