@@ -27,6 +27,10 @@ namespace vs // Note: actual namespace depends on the project name.
 
             Console.WriteLine("Cool! \n Whats your favourite color?");
             
+            if (Console.ReadKey().Key == ConsoleKey.K);
+            {
+                Console.Beep(1000, 500);
+            }
         }
     }
 }
