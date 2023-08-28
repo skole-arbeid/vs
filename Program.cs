@@ -14,7 +14,7 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             
             Console.WindowHeight = 40;
-            
+            Console.WindowTop = 25;
             
             Console.WriteLine("Hello, I am Arne.");
             Console.WriteLine("whats yours?");
