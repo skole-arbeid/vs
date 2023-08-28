@@ -11,7 +11,7 @@ namespace vs // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
             // change appearance
-            Console.Title = "arne";
+            Console.Title = "Arne";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             
             
@@ -33,12 +33,10 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.WriteLine("OK, \nNow i've extracted information now i will self destruct.");
 
             //ending in a blip for 2 secs
-            if (Console.ReadKey().Key == ConsoleKey.K);
+            if (Console.ReadKey().Key == ConsoleKey.Enter);
             {
                 Console.Beep(3000, 2000);
             }
         }
     }
 }
-
-
