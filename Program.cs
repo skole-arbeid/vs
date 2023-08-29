@@ -28,9 +28,23 @@ namespace vs // Note: actual namespace depends on the project name.
             
             Console.ReadLine();
 
+
+
+            int num01;
+            int num02;
+
+            Console.Write("ok, input a number: ");
+            num01 = Convert.ToInt32( Console.ReadLine() );
+            
+            Console.Write("input a second number: ");
+            num02 = Convert.ToInt32( Console.ReadLine() );
+
+            int result = num01 * num02;
+            Console.WriteLine("the answer is " + result);
+
             Console.ForegroundColor = ConsoleColor.DarkRed;
 
-            Console.WriteLine("OK, \nNow i've extracted information now i will self destruct.");
+            Console.WriteLine("I will now self destruct.");
 
             //ending in a blip for 2 secs
             if (Console.ReadKey().Key == ConsoleKey.Enter);
