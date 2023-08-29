@@ -29,7 +29,6 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.ReadLine();
 
 
-
             int num01;
             int num02;
 
@@ -42,8 +41,8 @@ namespace vs // Note: actual namespace depends on the project name.
             int result = num01 * num02;
             Console.WriteLine("the answer is " + result);
 
-            Console.ForegroundColor = ConsoleColor.DarkRed;
 
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("I will now self destruct.");
 
             //ending in a blip for 2 secs
