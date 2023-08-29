@@ -20,7 +20,7 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.WriteLine("whats yours?");
             
             string userName = Console.ReadLine();
-            Console.WriteLine("Hello" + userName + ", nice to meet you! \nWhat do you do?");
+            Console.WriteLine("Hello " + userName + ", nice to meet you! \nWhat do you do?");
             
             Console.ReadLine();
 
@@ -35,10 +35,10 @@ namespace vs // Note: actual namespace depends on the project name.
             //ending in a blip for 2 secs
             if (Console.ReadKey().Key == ConsoleKey.Enter);
             {
-                Console.Beep(3000, 1500);
-                Console.Beep(3000, 1500);
-                Console.Beep(3000, 1500);
-                Console.Beep(3000, 4000);
+                Console.Beep(2000, 1000);
+                Console.Beep(2000, 1000);
+                Console.Beep(2000, 1000);
+                Console.Beep(2000, 4000);
             }
         }
     }
