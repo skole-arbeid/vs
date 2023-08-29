@@ -29,16 +29,16 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.ReadLine();
 
 
-            int num01;
-            int num02;
+            double num01;
+            double num02;
 
             Console.Write("ok, input a number: ");
-            num01 = Convert.ToInt32( Console.ReadLine() );
+            num01 = Convert.ToDouble( Console.ReadLine() );
             
             Console.Write("input a second number: ");
-            num02 = Convert.ToInt32( Console.ReadLine() );
+            num02 = Convert.ToDouble( Console.ReadLine() );
 
-            int result = num01 * num02;
+            double result = num01 * num02;
             Console.WriteLine("the answer is " + result);
 
 
