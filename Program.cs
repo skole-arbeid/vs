@@ -35,10 +35,10 @@ namespace vs // Note: actual namespace depends on the project name.
             //ending in a blip for 2 secs
             if (Console.ReadKey().Key == ConsoleKey.Enter);
             {
-                Console.Beep(2000, 1000);
-                Console.Beep(2000, 1000);
-                Console.Beep(2000, 1000);
-                Console.Beep(2000, 4000);
+                Console.Beep(2000, 900);
+                Console.Beep(2000, 900);
+                Console.Beep(2000, 900);
+                Console.Beep(2000, 2000);
             }
         }
     }
