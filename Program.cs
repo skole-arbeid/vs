@@ -3,6 +3,7 @@ using System.Dynamic;
 using System.Runtime.CompilerServices;
 using System.Collections;
 using System.Reflection.Metadata.Ecma335;
+using Microsoft.VisualBasic;
 
 namespace vs // Note: actual namespace depends on the project name.
 {
@@ -33,15 +34,15 @@ namespace vs // Note: actual namespace depends on the project name.
            
            
             //ending in a blip for 2 secs
-            if (Console.ReadKey().Key == ConsoleKey.K); {
+            if (Console.ReadKey().Key == ConsoleKey.K) {
                 Console.Beep(2000, 900);
                 Console.Beep(2000, 900);
                 Console.Beep(2000, 900);
                 Console.Beep(2000, 2000);
+            } else if (Console.ReadKey().Key != ConsoleKey.K) {
+                Console.Beep(5000, 1000);
             }
             
-     
-     
         }
     }
 }
