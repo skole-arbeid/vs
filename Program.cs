@@ -14,32 +14,36 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.Title = "Arne";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             
-            Console.WriteLine("lets try to make an average");
-            
-            double num01;
-            double num02;
-            double num03;
+            Console.Write("input a number between 1 and 5: ");
 
-            Console.Write("ok, input a number: ");
-            num01 = Convert.ToDouble( Console.ReadLine() );
-            
-            Console.Write("input a second number: ");
-            num02 = Convert.ToDouble( Console.ReadLine() );
+            int num = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("input a third number: ");
-            num03 = Convert.ToDouble(Console.ReadLine() );
-
-            double result = (num01 + num02 + num03) / 3;
-            Console.WriteLine("the average is " + result);
-
+            if (num == 1) {
+                Console.WriteLine("One");
+            } else if (num ==2) {
+                Console.WriteLine("Two");
+            } else if (num == 3) {
+                Console.WriteLine("Three");
+            } else if (num == 4) {
+                Console.WriteLine("Four");
+            } else if (num == 5) {
+                Console.WriteLine("Five");
+            }
+           
+           
             //ending in a blip for 2 secs
-            if (Console.ReadKey().Key == ConsoleKey.Enter);
-            {
+            if (Console.ReadKey().Key == ConsoleKey.K);{
                 Console.Beep(2000, 900);
                 Console.Beep(2000, 900);
                 Console.Beep(2000, 900);
                 Console.Beep(2000, 2000);
+            } else if (Console.ReadKey().Key != ConsoleKey.K);  {
+                Console.Beep(4000, 900);
+                Console.Beep(3000, 900);
             }
+            
+     
+     
         }
     }
 }
