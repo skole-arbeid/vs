@@ -14,7 +14,7 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.Title = "Arne";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             
-            
+            Console.WriteLine("lets try to make an average");
             
             double num01;
             double num02;
@@ -30,7 +30,7 @@ namespace vs // Note: actual namespace depends on the project name.
             num03 = Convert.ToDouble(Console.ReadLine() );
 
             double result = (num01 + num02 + num03) / 3;
-            Console.WriteLine("the answer is " + result);
+            Console.WriteLine("the average is " + result);
 
             //ending in a blip for 2 secs
             if (Console.ReadKey().Key == ConsoleKey.Enter);
