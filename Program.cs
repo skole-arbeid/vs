@@ -15,22 +15,10 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             
             
-            //convo ish
-            Console.WriteLine("Hello, I am Arne.");
-            Console.WriteLine("whats yours?");
             
-            string userName = Console.ReadLine();
-            Console.WriteLine("Hello " + userName + ", nice to meet you! \nWhat do you do?");
-            
-            Console.ReadLine();
-
-            Console.WriteLine("Cool! \nWhats your favourite color?");
-            
-            Console.ReadLine();
-
-
             double num01;
             double num02;
+            double num03;
 
             Console.Write("ok, input a number: ");
             num01 = Convert.ToDouble( Console.ReadLine() );
@@ -38,12 +26,11 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.Write("input a second number: ");
             num02 = Convert.ToDouble( Console.ReadLine() );
 
-            double result = num01 * num02;
+            Console.Write("input a third number: ");
+            num03 = Convert.ToDouble(Console.ReadLine() );
+
+            double result = (num01 + num02 + num03) / 3;
             Console.WriteLine("the answer is " + result);
-
-
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.WriteLine("I will now self destruct.");
 
             //ending in a blip for 2 secs
             if (Console.ReadKey().Key == ConsoleKey.Enter);
