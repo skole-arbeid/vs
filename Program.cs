@@ -15,22 +15,33 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.Title = "Arne";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             
-            Console.Write("input a number between 1 and 5: ");
+            bool isCorrectGuess = false;
+            Random random = new Random();
 
-            int num = Convert.ToInt32(Console.ReadLine());
+            int randomNum = random.Next(1, 11);
 
-            if (num == 1) {
-                Console.WriteLine("One");
-            } else if (num ==2) {
-                Console.WriteLine("Two");
-            } else if (num == 3) {
-                Console.WriteLine("Three");
-            } else if (num == 4) {
-                Console.WriteLine("Four");
-            } else if (num == 5) {
-                Console.WriteLine("Five");
-            }
+            Console.WriteLine("Welcome to the number guessing game \nAnumber between 1 and 10 will be generated \nIf you guess correctly you win!");
+            
+
            
+           
+           while(!isCorrectGuess)
+           {
+                Console.WriteLine("input an number: ");
+                int guess = Convert.ToInt32(Console.ReadLine());
+
+                if(guess > randomNum) 
+                {
+                    Console.WriteLine("your guess is too high!");
+                } else if(guess < randomNum) 
+                {
+                    Console.WriteLine("your guess is too low!");
+                } else if(guess == randomNum) 
+                {
+                    Console.WriteLine("your guess was right!");
+                    isCorrectGuess = true;
+                }
+           }
            
            
             //ending in a blip for 2 secs
