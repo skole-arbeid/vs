@@ -43,14 +43,15 @@ namespace vs // Note: actual namespace depends on the project name.
                 }
            }
            
+           Console.WriteLine("sex? \n Y/N");
            
             //ending in a blip for 2 secs
-            if (Console.ReadKey().Key == ConsoleKey.K) {
+            if (Console.ReadKey().Key == ConsoleKey.Y) {
                 Console.Beep(2000, 900);
                 Console.Beep(2000, 900);
                 Console.Beep(2000, 900);
                 Console.Beep(2000, 2000);
-            } else if (Console.ReadKey().Key != ConsoleKey.K) {
+            } else if (Console.ReadKey().Key != ConsoleKey.Y) {
                 Console.Beep(5000, 1000);
             }           
         }
