@@ -52,8 +52,7 @@ namespace vs // Note: actual namespace depends on the project name.
                 Console.Beep(2000, 2000);
             } else if (Console.ReadKey().Key != ConsoleKey.K) {
                 Console.Beep(5000, 1000);
-            }
-            
+            }           
         }
     }
 }
