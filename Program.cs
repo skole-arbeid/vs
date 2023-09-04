@@ -20,7 +20,7 @@ namespace vs // Note: actual namespace depends on the project name.
 
             int randomNum = random.Next(1, 11);
 
-            Console.WriteLine("Welcome to the number guessing game \nAnumber between 1 and 10 will be generated \nIf you guess correctly you win!");
+            Console.WriteLine("Welcome to the number guessing game \nAn number between 1 and 10 will be generated \nIf you guess correctly you win!");
             
 
            
