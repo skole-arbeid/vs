@@ -7,7 +7,7 @@ using Microsoft.VisualBasic;
 
 namespace vs // Note: actual namespace depends on the project name.
 {
-    class Program
+    class Program2
     {
         static void Main(string[] args)
         {
@@ -15,33 +15,11 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.Title = "Arne";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             
-            bool isCorrectGuess = false;
-            Random random = new Random();
-
-            int randomNum = random.Next(1, 11);
-
-            Console.WriteLine("Welcome to the number guessing game \nAn number between 1 and 10 will be generated \nIf you guess correctly you win!");
             
 
-           
-           
-           while(!isCorrectGuess)
-           {
-                Console.WriteLine("input an number: ");
-                int guess = Convert.ToInt32(Console.ReadLine());
 
-                if(guess > randomNum) 
-                {
-                    Console.WriteLine("your guess is too high!");
-                } else if(guess < randomNum) 
-                {
-                    Console.WriteLine("your guess is too low!");
-                } else if(guess == randomNum) 
-                {
-                    Console.WriteLine("your guess was right!");
-                    isCorrectGuess = true;
-                }
-           }
+
+
            
            Console.WriteLine("sex? \n Y/N");
            
@@ -55,5 +33,18 @@ namespace vs // Note: actual namespace depends on the project name.
                 Console.Beep(5000, 1000);
             }           
         }
+    
+        static void meetAlien()
+        {
+            Random numberGen = new Random();
+
+            string name = "X-" + numberGen.Next(10, 9999);
+            int age = numberGen.Next(10, 10000);
+
+            Console.WriteLine("Hi, my name is " + name);
+            Console.WriteLine("I am " + age + " years old!");
+            Console.WriteLine("Im an corrix (an human like species that has conseptive and presentive memory, they also have a life span up to 10000 years)");
+        }
+    
     }
 }
