@@ -17,10 +17,11 @@ namespace vs // Note: actual namespace depends on the project name.
             
             meetAlien();
 
+            Console.WriteLine("---------------");
 
+            meetAlien();
 
-
-           
+            Console.WriteLine("---------------");
            
            
             //ending in a blip for 2 secs
