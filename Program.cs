@@ -15,13 +15,13 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.Title = "Arne";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             
-            
+            meetAlien();
 
 
 
 
            
-           Console.WriteLine("sex? \n Y/N");
+           
            
             //ending in a blip for 2 secs
             if (Console.ReadKey().Key == ConsoleKey.Y) {
@@ -43,7 +43,7 @@ namespace vs // Note: actual namespace depends on the project name.
 
             Console.WriteLine("Hi, my name is " + name);
             Console.WriteLine("I am " + age + " years old!");
-            Console.WriteLine("Im an corrix (an human like species that has conseptive and presentive memory, they also have a life span up to 10000 years)");
+            Console.WriteLine("Im an corrix \n(an human like species that has conseptive and presentive memory, they also have a life span up to 10000 years)");
         }
     
     }
