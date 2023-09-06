@@ -25,14 +25,19 @@ namespace vs // Note: actual namespace depends on the project name.
            
             Console.WriteLine("choose 1 or 2");
             
-            if (Console.ReadKey().Key == ConsoleKey.NumPad1) {
+            while(true) 
+            {
+                if (Console.ReadKey().Key == ConsoleKey.NumPad1) {
                 Console.WriteLine("\nyou chose alien #1");
                 Console.WriteLine(alien1);
                 Console.WriteLine("have a date?");
+                break;
             } else if (Console.ReadKey().Key == ConsoleKey.NumPad2) {
                 Console.WriteLine("\nyou chose alien #2");
                 Console.WriteLine(alien2);
                 Console.WriteLine("have a date?");
+                break;
+            }
             }
             
             
