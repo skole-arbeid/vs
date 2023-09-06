@@ -7,7 +7,7 @@ using Microsoft.VisualBasic;
 
 namespace vs // Note: actual namespace depends on the project name.
 {
-    class Program2
+    class Program
     {
         static void Main(string[] args)
         {
@@ -62,15 +62,20 @@ namespace vs // Note: actual namespace depends on the project name.
             }
             }
            
-           
-            if (Console.ReadKey().Key == ConsoleKey.Y) {
+            while(true)
+            {
+                if (Console.ReadKey().Key == ConsoleKey.Y) {
                 Console.Beep(1000, 900);
                 Console.Beep(1000, 900);
                 Console.Beep(1000, 900);
                 Console.Beep(1000, 2000);
             } else if (Console.ReadKey().Key == ConsoleKey.N) {
                 Console.Beep(1000, 1000);
-            }           
+            } else{
+                Console.WriteLine("die");
+            }
+            }
+            
         }
     
         static object meetAlien1()
