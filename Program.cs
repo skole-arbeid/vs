@@ -15,11 +15,11 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.Title = "Arne";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             
-            meetAlien1();
+             object alien1 = meetAlien1();
 
             Console.WriteLine("---------------");
 
-            meetAlien2();
+            object alien2 = meetAlien2();
 
             Console.WriteLine("---------------");
            
@@ -27,11 +27,11 @@ namespace vs // Note: actual namespace depends on the project name.
             
             if (Console.ReadKey().Key == ConsoleKey.NumPad1) {
                 Console.WriteLine("\nyou chose alien #1");
-                meetAlien1();
+                Console.WriteLine(alien1);
                 Console.WriteLine("have a date?");
             } else if (Console.ReadKey().Key == ConsoleKey.NumPad2) {
                 Console.WriteLine("\nyou chose alien #2");
-                meetAlien2();
+                Console.WriteLine(alien2);
                 Console.WriteLine("have a date?");
             }
 
@@ -47,7 +47,7 @@ namespace vs // Note: actual namespace depends on the project name.
             }           
         }
     
-        static void meetAlien1()
+        static object meetAlien1()
         {
             Random numberGen = new Random();
 
@@ -58,19 +58,23 @@ namespace vs // Note: actual namespace depends on the project name.
             Console.WriteLine("Hi, my name is " + name + "<3");
             Console.WriteLine("I am " + age + " years old!");
             Console.WriteLine("Im an corrix \n(an human like species that has conseptive and presentive memory, they also have a life span up to 10000 years)");
+            string text = "Hi, my name is " + name + "<3\n" + "I am " + age + " years old!\n" + "Im an corrix \n(an human like species that has conseptive and presentive memory, they also have a life span up to 10000 years)";
+            return text;
         }
     
-        static void meetAlien2()
+        static object meetAlien2()
         {
             Random numberGen = new Random();
 
-            string name = "X- " + numberGen.Next(10, 9999);
+            string name = "Elf- " + numberGen.Next(10, 9999);
             int age = numberGen.Next(10, 200);
             
 
             Console.WriteLine("Hi, my name is " + name + "<3");
             Console.WriteLine("I am " + age + " years old!");
             Console.WriteLine("Im an Omada \n(an elf like species that has amazing food and an life span of 200 years)");
+            string text = "Hi, my name is " + name + "<3" + "I am " + age + " years old!" + "Im an Omada \n(an elf like species that has amazing food and an life span of 200 years)";
+            return age;
         }
     
     }
