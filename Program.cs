@@ -12,7 +12,7 @@ namespace vs // Note: actual namespace depends on the project name.
         static void Main(string[] args)
         {
             // change appearance
-            Console.Title = "Arne";
+            Console.Title = "Alien Dating Simulator";
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             
              object alien1 = meetAlien1();
