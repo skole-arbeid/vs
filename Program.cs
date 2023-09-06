@@ -37,6 +37,8 @@ namespace vs // Note: actual namespace depends on the project name.
                 Console.WriteLine(alien2);
                 Console.WriteLine("have a date?");
                 break;
+            } else{
+                Console.WriteLine("that was not an option");
             }
             }
             
