@@ -35,16 +35,25 @@ namespace vs // Note: actual namespace depends on the project name.
                 Console.WriteLine("have a date?");
             }
             
-            Console. WriteLine("yes or no");
+            
+            while(true)
+            {
+                Console. WriteLine("yes or no");
 
-            if (Console.ReadLine() == "yes") {
+                if (Console.ReadLine() == "yes") {
                 Console.WriteLine("yay!");
                 Console.WriteLine("I can really feel an connection!");
-            } else if (Console.ReadLine() == "no") {
+                break;
+            } 
+            else if (Console.ReadLine() == "no") {
                 Console.WriteLine("D,:");
                 Console.WriteLine("damn okay :( i could really feel an connection thooo");
+                break;
             }
-            
+            else {
+                Console.WriteLine("this was not an option");
+            }
+            }
            
            
             if (Console.ReadKey().Key == ConsoleKey.Y) {
